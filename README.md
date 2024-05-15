@@ -37,7 +37,7 @@ Java ,JSP ,JDBC ,Servlets(Apache Tomacat 10.1) ,MySQL
 ![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/7254b5f4-070a-47d5-a87d-d8dae2d3f712)
 
 **Shop By Category**
-![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/43ae4988-4b7c-4455-a534-5e85ae749560)
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/b4b3cdd1-d89a-4d5e-8454-c1c42327c211)
 ![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/81e5b924-bef4-40af-aa04-ea4b9a4076a3)
 
 **Cars Category**
