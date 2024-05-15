@@ -42,7 +42,7 @@ public class Signup extends HttpServlet {
 			else {
 				resp.setContentType("text/html");
 				out.print("<h3>Try Again ,not registered </h3>");
-				RequestDispatcher rd=req.getRequestDispatcher("index.jsp");
+				RequestDispatcher rd=req.getRequestDispatcher("index.html");
 				rd.include(req, resp);
 			}
 		} catch (Exception e) {
