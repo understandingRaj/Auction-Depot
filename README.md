@@ -22,10 +22,43 @@ Java ,JSP ,JDBC ,Servlets(Apache Tomacat 10.1) ,MySQL
 
 **SignUp Page**
 
-![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/355769ac-767d-489e-9c46-2bf425007d82)
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/d99aac01-9a15-4e22-a637-5200f2347722)
 
 **Login Page**
 ![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/2b84bbbf-a99c-40f1-ad17-22bf6b90bdfb)
+
+**Forgotten Password**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/870d1d58-3a7d-4ddb-af9c-d0330fe697ed)
+
+**Contact Us For any query**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/2e28d4d6-5bc6-4fb0-b63b-3f2207013e21)
+
+**Home Page**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/7254b5f4-070a-47d5-a87d-d8dae2d3f712)
+
+**Shop By Category**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/43ae4988-4b7c-4455-a534-5e85ae749560)
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/81e5b924-bef4-40af-aa04-ea4b9a4076a3)
+
+**Cars Category**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/db16667f-f3a0-4552-a056-a56ae5028224)
+
+**Bike Category**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/aedf5150-d7f3-4d7a-83c2-6054846bde72)
+
+**Antiques**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/8ecdfc43-01e7-4b6b-ac11-e93e2cdf378c)
+
+**Live Auctions**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/a8aab679-8a8f-4585-9440-ea6e4eb691a1)
+
+**Upcoming Auctions**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/4fe92bd7-f894-4123-b6bf-8c28ccb1e236)
+
+**About Us and Footer**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/ed04fa4d-f5b2-46be-bc52-15238057efa9)
+
+
 
 
 
