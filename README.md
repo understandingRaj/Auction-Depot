@@ -11,28 +11,11 @@ Technology used :
 
 FRONTEND :
 
-Html
-
-CSS
-
-Javascript
-
-BootStrap
-
-JQuery
-
+Html ,CSS ,Javascript ,BootStrap ,JQuery
 
 BACKEND :
 
-Java
-
-JSP
-
-JDBC
-
-Servlets(Apache Tomacat 10.1)
-
-MySQL
+Java ,JSP ,JDBC ,Servlets(Apache Tomacat 10.1) ,MySQL
 
 
 
