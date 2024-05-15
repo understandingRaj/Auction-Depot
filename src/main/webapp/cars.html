@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Car</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cars.css">
+    <style>
+    input{
+	cursor: pointer;
+}
+.silvercar{
+	  background-color: silver;
+}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cars.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="./images/logo.png" alt="Not Found"></a>
+        </div>
+        <div class="rightnavbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#aboutus">About Us </a></li>
+                <li><a href="#">Sell / Purchase</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-cart-shopping"></i> </span>Cart</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="subnavbar">
+        <div class="left-subnavbar">
+            <ul class="sidecategory">
+                <li class="sidecategory">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-grid-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
+                        </svg></span><span  class="sidecategory">Categories</span>
+                </li>
+            </ul>
+            <div id="navcategory">
+                <h6>Buy Automobile</h6>
+                <div class="car-section">
+                    <a href="cars.html">
+                        <figure>
+                            <i class="fa-solid fa-car-side"></i>
+                            <figcaption> Car</figcaption>
+                        </figure>
+                    </a>
+                    <a href="bikes.html">
+                        <figure>
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <figcaption> Bike</figcaption>
+                        </figure>
+                    </a>
+                    <a href="cycles.html">
+                        <figure>
+                            <i class="fa-solid fa-bicycle"></i>
+                            <figcaption> Cycle</figcaption>
+                        </figure>
+                    </a>
+                   
+                    <a href="scooter.html">
+                        <figure>
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <figcaption> Scooter</figcaption>
+                        </figure>
+                    </a>
+                    <a href="electricvehicles.html">
+                        <figure>
+                            <i class="fa-solid fa-charging-station"></i>
+                            <figcaption> Electric Car</figcaption>
+                        </figure>
+                    </a>
+    
+                </div>
+    
+                <hr>
+                <h6>Buy Smartphones & Accessories</h6>
+                <div class="mobile-section">
+                    <a href="accessories.html">
+                        <figure>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <figcaption> Smartphones & Accessories</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <hr>
+                <h6>Buy Paintings</h6>
+                <div class="painting-section">
+                    <a href="art.html">
+                        <figure>
+                            <i class="fa-solid fa-palette"></i>
+                            <figcaption> Paintings/ Art</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <hr>
+                <h6>Buy Antiques</h6>
+                <div class="antique-section">
+                    <a href="antiques.html">
+                        <figure>
+                            <i class="fa-solid fa-radio"></i>
+                            <figcaption> Antiques</figcaption>
+                        </figure>
+                    </a>
+                </div>
+    
+    
+            </div>
+
+        </div>
+        <div class="right-subnavbar">
+            <ul>
+                <li>Winners List</li>
+                <li>Contact Us</li>
+                <li>FAQS</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-----------------------------------car section---------------------------------  -->
+
+    <div class="carssection">
+        <div class="carsleftright">
+            <div class="leftcars">
+                <h4 style=" padding: 5px; margin-left:20px; margin-top:20px;">Condition</h4>
+                <div class="checkboxes">
+                   
+                    <div class="used">
+                        <label for=""  style="cursor: pointer;">Used </label> <input type="radio" name="used" onclick="usedcar()" style="cursor: pointer;">
+                    </div>
+                    <div class="new">
+                        <label for="" style="cursor: pointer;">New </label> <input type="radio" name="used" onclick="newcar()" style="cursor: pointer;">
+                    </div>
+
+                </div>
+                <hr>
+                <div class="cars-category">
+                    <h4>Category</h4>
+                    <ul>
+                        <li><input type="radio" name="cars" onclick="allcar()"> All Cars</li>
+                        <li><input type="radio" name="cars"> Premium / Super Car</li>
+                        <li><input type="radio" name="cars"> Vintage Car</li>
+                        <li><input type="radio" name="cars"> Taxi </li>
+                    </ul>
+
+                </div>
+                <hr>
+                <div class="cars-category">
+                    <h4>Location</h4>
+                    <div class="locations">
+                        <ul>
+                            <li><input type="radio" name="location" onclick="pune()"> Pune</li>
+                            <li><input type="radio" name="location" onclick="punjab()"> Punjab</li>
+                            <li><input type="radio" name="location" onclick="lucknow()"> Lucknow</li>
+                            <li><input type="radio" name="location" onclick="delhi()"> Delhi </li>
+                            <li><input type="radio" name="location" onclick="mumbai()"> Mumbai </li>
+                            <li><input type="radio" name="location" onclick="jaipur()"> Jaipur </li>
+                            <li><input type="radio" name="location" onclick="kolkata()"> Kolkata </li>
+                            <li><input type="radio" name="location" onclick="noida()"> Noida </li>
+                            <li><input type="radio" name="location" onclick="chandigarh()"> Chandigarh </li>
+                            <li><input type="radio" name="location" onclick="ludhiana()"> Ludhiana </li>
+                            <li><input type="radio" name="location" onclick="patna()"> Patna </li>
+                            <li><input type="radio" name="location" onclick="agra()"> Agra </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="cars-category">
+                    <h4>Exterior Color</h4>
+                    <div class="color">
+                        <div class="colorbox blackcar" onclick="blackcar()"></div>
+                        <div class="colorbox whitecar" onclick ="carwhite()"></div>
+                        <div class="colorbox bluecar" onclick="bluecar()"></div>
+                        <div class="colorbox redcar" onclick="redcar()"></div>
+                        <div class="colorbox silvercar" onclick="silvercar()"></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="cars-category fueltype">
+                    <h4>Fuel Type</h4>
+                    
+                        <ul>
+                            <li><input type="radio" name="fueltype"> Petrol</li>
+                            <li><input type="radio" name="fueltype"> Diesel</li>
+                            <li><input type="radio" name="fueltype"> Petrol + CNG</li>
+                            <li><input type="radio" name="fueltype"> CNG </li>
+                            <li><input type="radio" name="fueltype"> LPG </li>
+                            <li><input type="radio" name="fueltype"> Petrol + LPG </li>
+                            <li><input type="radio" name="fueltype"> Electric </li>
+                        </ul>
+                 
+                </div>
+            </div>
+
+
+
+
+<!-- --------------------------------Right Cars------------------------- -->
+            <div class="rightcars">
+                <div  class="carbox neww red all pune" id="red1">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-09-19/957f61e4ae31d1334b1b53bf840eb0c6_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="productdetails.html">Renault KWID RXE 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 3,69,800</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Pune</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox neww silver all punjab" id="silver1">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-05-20/a6a41f81e070b6462c74c0205556722f_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Maruti Suzuki Alto STD 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 2,94,800</h3>
+                        <div class="icons">
+
+                            
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Punjab</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox usedd white all lucknow" id="white1">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/cfix/photos/listing/2024-02-09/74c479696bd1f558abc403bbe2dec976_large.jpg"
+                            alt=""><br>
+                        <h3><a href="">Mahindra Scorpio SLE BS IV 2012</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 4,75,000</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Lucknow</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2012</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox usedd white all delhi" id="white2">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2024-04-19/a76019b0f408c1ef7b5c908d11552ac2_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Maruti Suzuki Ertiga VXI CNG 2021</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 10,73,650</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>27,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Delhi</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2021</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol+CNG</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox neww red all mumbai" id="red2">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-06-19/6d3dec4b2f74d6ce6b71ba1e1e5f0138_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Volkswagen Polo Trendline 1.0L MPI 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 5,82,500</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Mumbai</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox usedd red all jaipur" id="red3">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2024-04-20/31fc70bf78e1e5821f4ebe4f28790851_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Hyundai i10 Magna 1.1 LPG 2012</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 2,06,850</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>80,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Jaipur</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2012</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol + LPG</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox neww red all kolkata" id="red4">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-06-19/6d3dec4b2f74d6ce6b71ba1e1e5f0138_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Volkswagen Polo Trendline 1.0L MPI 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 5,82,500</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Kolkata</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox silver usedd all noida" id="silver2">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2024-04-23/33b2fcf5963a94191513af5f0f918edd_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Toyota Fortuner 3.0 4X4 MT 2017</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 24,13,250</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Noida</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2017</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox black usedd all chandigarh" id="black1">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2024-04-27/2a41ec502f2e9df500ae71a780d1050e_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Volkswagen Polo 1.2 TDI Highline 2011</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 4,10,000</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>78,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Chandigarh</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2011</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Diesel</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox silver neww all ludhiana" id="silver3">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-06-09/6070a6af733c7151dd378092d579a81a_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Maruti Suzuki S-Presso STD 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 3,70,500</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Ludhiana</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox blue usedd all patna" id="blue1">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2024-04-16/e062db2aab8f629a98d326083cc3f1e6_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Datsun Go Plus T 2016</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 1,77,300</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>49,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Patna</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2016</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox white neww all agra" id="white3">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2021-11-13/8b8732f243718bf10e7f42a718e17289_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Tata Punch Pure MT 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹5,49,000</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Agra</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox silver neww all pune" id="silver4">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2020-09-19/e80cc02190d35450b576ec26dcb1c983_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Renault Triber RXE 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 5,12,000</h3>
+                        <div class="icons">
+
+                            <!-- <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>90,000 km</span>
+                            </div> -->
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Pune</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2022</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>Petrol</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox silver usedd all punjab" id="silver5">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2022-10-20/7536626e13499b631b37c1e53352bf34_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Maruti Suzuki Ertiga VXI CNG 2022</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 12,37,100</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>12,000 km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Punjab</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2012</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>CNG</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carbox white usedd all lucknow" id="white4">
+                    <i class="fa-solid fa-heart heart"></i>
+                    <div class="description">
+
+                        <img src="https://cdn1.acedms.com/w709/photos/listing/2019-05-19/99ad087aa4291f9cc45f64ea7cfe80d1_extra_large.jpg.webp"
+                            alt=""><br>
+                        <h3><a href="">Hyundai i20 Asta 1.2 2010</a></h3>
+                        <h3 class="price" style="margin-top: 25px;">₹ 1,89,000</h3>
+                        <div class="icons">
+
+                            <div class="road">
+                                <i class="fa-solid fa-road"></i>
+                                <span>1,32,712 Km</span>
+                            </div>
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Lucknow</span>
+                            </div>
+                            <div class="calender">
+                                <i class="fa-regular fa-calendar-days "></i>
+                                <span>2010</span>
+                            </div>
+                            <div class="pump">
+                                <i class="fa-solid fa-gas-pump"></i>
+                                <span>LPG</span>
+                            </div>
+                            <div class="manual">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Manual</span>
+                            </div>
+
+                        </div>
+                        <div class="carspecification">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="aboutus" id="aboutus">
+                    <center>
+                        <h3>About Us</h3>
+                    </center>
+                    <div class="about">
+                        <p>Welcome to Auction Depot, one of the best Indian online auction shopping venues on the Net!
+                            This web site is owned and operated by Auction Depot Corporation, an Indian enterprise
+                            founded
+                            by a group of seasoned investors; successful business persons from All across of India.</p>
+                        <p>Auctiondepot.com is india's first online TV Shop xyzz.in You can buy branded LED , 3D TV,
+                            Smart TV at ever lowest prices in india.</p>
+                        <p>Auction Depot has introduced a completely new and funny way of online shopping. Why spending
+                            a fortune for a brand new product if you can get it with a huge discount? We give you the
+                            chance to get the products you dream about at amazing prices!</p>
+                        <p>Auctiondepot.com is a new exciting auction website where you can win branded factory sealed
+                            new products at huge discounts.</p>
+                        <p>Auction Depot gives an opportunity to those people who can't afford to purchase costly
+                            branded products, they can try our risk free auctions to win their desired products like
+                            Cars, Bikes, Smartphones, Laptop, Tablets, branded watches , Paintings & Antiques Piece and
+                            many more.</p>
+                        <p>We will do our very best to provide you with great merchandise at the best possible price. We
+                            think you will find that mixing online auction competition into the "joy of shopping" makes
+                            it all even more fun at bidderboy.</p>
+                    </div>
+                    <div class="terms-condition">
+                        <p>Trems & Conditions | Legal Terms of use | FAQs | Contact Us</p>
+                        <p class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </p>
+                        <hr>
+						<p ><h5 style="font-family:cursive;">MADE BY RAJESH KUMAR with 🖤</h5>
+						</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+        <!--Scripts  start-->
+       <script>
+       function carwhite(){
+    	    document.getElementById("red1").style.display="none";
+    	    document.getElementById("red2").style.display="none";
+    	    document.getElementById("red3").style.display="none";
+    	    document.getElementById("red4").style.display="none";
+    	    document.getElementById("black1").style.display="none";
+    	    document.getElementById("blue1").style.display="none";
+    	    document.getElementById("silver1").style.display="none";
+    	    document.getElementById("silver2").style.display="none";
+    	    document.getElementById("silver3").style.display="none";
+    	    document.getElementById("silver4").style.display="none";
+    	    document.getElementById("silver5").style.display="none";
+    	    document.getElementById("white1").style.display="block";
+    	    document.getElementById("white2").style.display="block";
+    	    document.getElementById("white3").style.display="block";
+    	    document.getElementById("white4").style.display="block";
+    	}
+    	</script>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <!-- scripts end -->
+         <!--Scripts  start-->
+         <script src="cars.js"></script>
+         <script src="script.js"></script>
+         <script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+             crossorigin="anonymous"></script>
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+             crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+             crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+             crossorigin="anonymous"></script>
+         <!-- scripts end -->
+</body>
+
+</html>

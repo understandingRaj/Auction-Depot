@@ -1,0 +1,38 @@
+.carbox{
+    height: 450px;
+}
+.carbox img{
+    height: 250px;
+}
+
+/* -------------------media query------------- */
+
+@media screen and (max-width:854px) {
+    .carbox {
+        width: 200px;
+        height: 375px;
+    }
+    .carbox img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:671px) {
+   .carbox {
+        width: 170px;
+        height: 310px;
+    }
+    .carbox img{
+        height: 150px;
+    }
+}
+@media screen and (max-width:403px) {
+    .carbox {
+        width: 100%;
+        height: auto;
+        /* margin: 10px 10%; */
+    }
+    .carbox img{
+        height: 350px;
+    }
+}

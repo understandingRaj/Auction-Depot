@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Auction Website</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="bidnow.css">
+<!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+</style>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="home.html"> <img src="./images/logo.png"
+					alt="Not Found"></a>
+			</div>
+			<div class="rightnavbar">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="#aboutus">About Us </a></li>
+					<li><a href="#">Sell / Purchase</a></li>
+					<li><a href="#"><span><i
+								class="fa-solid fa-cart-shopping"></i> </span>Cart</a></li>
+					<!----<li><a href="#">Sign in/Login</a></li>  -->
+				</ul>
+			</div>
+
+		</div>
+
+		<!----------------------------------------------------- subnavbar---------------------------------------------------------------------------- -->
+		<div class="subnavbar">
+			<div class="left-subnavbar">
+				<ul class="sidecategory">
+					<li class="sidecategory"><span><svg
+								xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                                <path
+									d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
+                            </svg></span><span class="sidecategory">Categories</span>
+					</li>
+				</ul>
+
+				<div id="navcategory">
+
+					<h6>Buy Automobile</h6>
+					<div class="car-section">
+						<a href="cars.html">
+							<figure>
+								<i class="fa-solid fa-car-side"></i>
+								<figcaption>Car</figcaption>
+							</figure>
+						</a> <a href="bikes.html">
+							<figure>
+								<i class="fa-solid fa-motorcycle"></i>
+								<figcaption>Bike</figcaption>
+							</figure>
+						</a> <a href="cycles.html">
+							<figure>
+								<i class="fa-solid fa-bicycle"></i>
+								<figcaption>Cycle</figcaption>
+							</figure>
+						</a> <a href="scooter.html">
+							<figure>
+								<i class="fa-solid fa-motorcycle"></i>
+								<figcaption>Scooter</figcaption>
+							</figure>
+						</a> <a href="electricvehicles.html">
+							<figure>
+								<i class="fa-solid fa-charging-station"></i>
+								<figcaption>Electric Car</figcaption>
+							</figure>
+						</a>
+
+					</div>
+
+					<hr>
+					<h6>Buy Smartphones & Accessories</h6>
+					<div class="mobile-section">
+						<a href="accessories.html">
+							<figure>
+								<i class="fa-solid fa-mobile-screen-button"></i>
+								<figcaption>Smartphones & Accessories</figcaption>
+							</figure>
+						</a>
+					</div>
+					<hr>
+					<h6>Buy Paintings</h6>
+					<div class="painting-section">
+						<a href="art.html">
+							<figure>
+								<i class="fa-solid fa-palette"></i>
+								<figcaption>Paintings/ Art</figcaption>
+							</figure>
+						</a>
+					</div>
+					<hr>
+					<h6>Buy Antiques</h6>
+					<div class="antique-section">
+						<a href="antiques.html">
+							<figure>
+								<i class="fa-solid fa-radio"></i>
+								<figcaption>Antiques</figcaption>
+							</figure>
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="right-subnavbar">
+				<ul>
+					<li>Winners List</li>
+					<li><a href="#contactus">Contact Us</a></li>
+					<li class="faq">FAQS</li>
+				</ul>
+			</div>
+		</div>
+		<div class="faq-outer">
+			<div class="faq-inner">
+				<h5>What is Auctiondepot all about ? What is the concept?</h5>
+				<p>Auctiondepot.com is an unique online auction platform that
+					allows you to BID on branded products and gives you a change to WIN
+					products at few rupees. It’s a kind of fun bargain deals and online
+					shopping.</p>
+
+				<h5>Who can participate in auctiondepot's online auctions?</h5>
+				<p>Any one above 18+ years of age can sign up and participate in
+					auctiondepot auctions. Users from outside india / abroad can also
+					join Auctiondepot.com but they will have to pay additional shipping
+					charges for International Shipping.</p>
+
+				<h5>How does Auctiondepot auctions work?</h5>
+				<p>Registered Auctiondepot users compete each other to win
+					items. The price of the item starts at Rs.0/- and the auction clock
+					starts counting down. Each time a bid is placed, the price of the
+					item increases by a set amount and the auction clock's time gets
+					reset. Once you place a bid, you’re in the lead until the auction
+					clock runs out or someone else places a bid. When the auction clock
+					reaches 00:00 and no more bids are received, the auction is over
+					and the last person who bids wins the auction. winning price and
+					winner's user ID is shown over that closed auction.</p>
+
+				<h5>How can I start bidding on auctiondepot auctions?</h5>
+				<p>Getting started is very easy . First, create an account by
+					clicking on the SIGN UP button on homepage, then, purchase any bid
+					credits package by clicking on the TOP-UP CREDITS button. Finally,
+					join an auction that is running live on LIVE AUCTION page by
+					clicking on the BID button. wait till timer reaches 0:0 if you are
+					a last bidder and clock runs out, you are a winner!</p>
+
+				<h5>What are bid credits and how much does it cost?</h5>
+				<p>To place a bid on any auction, you would need Bidderboy
+					Credits . Each auction has an uniqne number of credits required per
+					bid. you can purchase credits in different packs. each credit costs
+					you Rs.7/- to Rs.10/- maximum depending on the Credit package size
+					you order. also we provides additional discount by giving promo
+					codes time to time.</p>
+
+				<h5>Is it legal to offer such online auction service and to
+					participate in them?</h5>
+				<p>Yes, Absolutely. this is a new version of traditional offline
+					auction Going 1- Going 2- SOLD. Online auctions are legal in India
+					and we have to meet with all compliance requirements of RBI,
+					various Banks and Payment Gateway service providers. Bidding online
+					may be prohibited in some countries.</p>
+
+				<h5>How long does a auctiondepot auction last?</h5>
+				<p>There is no pre-determined end time for auctions. An auction
+					closes after the last person bids and /or the auction clock runs
+					out. It also gets PAUSED if pre-defined auction hours for the day
+					are runs out. It will resume on next day at pre-defined RESUME
+					time.in case of any technical issues or server downtime an auction
+					will go to PAUSED mode automatically.</p>
+
+				<h5>Does each auction have the same clock reset time?</h5>
+				<p>No, depending on the auction, there will be a reset time of
+					10 seconds to 2 minutes. You can check this clock reset time around
+					any running live auction. During any running auction, clock reset
+					timing can be reduced if too many bidders are participating on same
+					auction. This is the real fun of bidding.</p>
+
+				<h5>Does each BID have the same price increment?</h5>
+				<p>No, depending on the MRP of the product, there will be a
+					price increment of 10 paisa INR to 50 paisa INR per bid. you can
+					check this rate of price increment around any running auction.
+					Costly products will have higher price increment and vice versa.</p>
+
+				<h5>What type of products does bidderboy put here for auctions?</h5>
+				<p>Smart phones, regular phones & mobile accessories, Laptops,
+					Notebooks, Tablets, Desktops, iPods, Music system, LED/LCD Tvs,
+					Fashion brands and personal accessories, Sports items, Home
+					Appliances, Gift vouchers, Holiday vouchers, Discount coupons,
+					Biddeboy Credit packages and everything else whatever latest trends
+					in India and most wanted by youngsters.</p>
+
+
+				<h5>Are all products brand new, original, with original bill
+					and warranty?</h5>
+				<p>Absolutely Yes, All products at bidderboy are 100% brand new,
+					original, unused, seal pack, with GST paid bill and manufacturer
+					warranty. Products will be shipped by our 3rd party vendors and we
+					will monitor the entire delivery process.</p>
+
+				<h5>Can I open more than one account on bidderboy?</h5>
+				<p>No. it is illegal to operate multiple accounts by single
+					user. Our system monitors your IP address and MAC address. If you
+					are found violating this rule, we will terminate your account
+					permanently and your unused credits will be void.</p>
+
+				<h5>Is there any winning limit? Can I participate and win
+					unlimited auctions?</h5>
+				<p>There is no limits at auctiondepot. you can participate in
+					unlimited auctions and also you can win unlimited products. There
+					is no such limitations like other bidding websites</p>
+
+				<h5>How long does my bid credits valid after I purchase? are
+					unused credits refundable?</h5>
+				<p>Credits purchased by you are always yours. it never expires.
+					you can use them any time you want. but credits are non
+					transferable and non-refundable. you must use credits on any
+					auction.</p>
+
+				<h5>I just won an auction, what to do now?</h5>
+				<p>Go to MY ACCOUNT/WIN HISTORY section and complete payment of
+					your final due amount by clicking MAKE PAYMENT link.once your
+					payment is confirmed, we will arrange shipment of your product. you
+					need to ensure that your shipping address and contact details are
+					correctly updated in your MY ACCOUNT section</p>
+
+				<h5>What is AutoBid feature ? How it works?</h5>
+				<p>Auto Bid is designed for those types of situations when you
+					cannot be online, or when you would like to have bids placed
+					automatically for you. Simply decide how many bids you want to
+					place and at what price your Auto Bid command will get activated.
+					Auto Bid automatically bids for you each time someone else places a
+					higher bid. You can rely on our Auto Bid to bid as you set it.
+					Thus, you can participate in an auction even if you are not online
+					and you can't miss some of the hot auctions.</p>
+
+				<h5>Are Auctiondepot employees allowed to place bids?</h5>
+				<p>No, auctiondepot’s employees, Web developers, any person
+					engaged directly or indirectly in bidderboy’s business process are
+					strictly forbidden to bid on the auctions.</p>
+
+				<h5>What is prohibited while bidding at Auctiondepot.com?</h5>
+				<p>Below activities are strictly prohibited and it will be
+					treated as violation of our terms and conditions
+				<ul>
+					<li>Operating multiple user accounts by a single user</li>
+					<li>Participate in an auction in a group of few users together
+						from a same household or a same place</li>
+					<li>Using any third party bidding software/tools/scripts to
+						place automatic bids, or to operate your account using such
+						methods</li>
+					<li>Accessing an user account from different workstations or
+						devices and placing BIDS using different devices at a same time
+						during an auction
+						</p>
+					</li>
+				</ul>
+
+
+
+				<h5>What are the payment methods to buy bid credits or to make
+					payments for the products?</h5>
+				<p>We use RBI approved payment gateways like - CCAvenue, Oxigen
+					& Paypal. It supports Debit Cards, Credit Cards, Wallets, Paytm,
+					UPI, Net Banking, Cash Cards & EMI options. You may also make
+					payment in to our bank account. contact our billing team on billing
+					{at} bidderboy {dot} com for any assistance with the payments.</p>
+
+				<h5>My question is not listed here and I need further
+					clarifications</h5>
+				<p>We are open minded, just contact us by filling up quick
+					contact form on our Contact us page, we will get back to you soon
+					with clarifications.</p>
+
+			</div>
+		</div>
+
+
+		<!-- -------------------------------------------Hero Section------------------- -->
+		<div class="herosection">
+
+			<div id="carouselExampleControls" class="carousel slide"
+				data-ride="carousel">
+				<div class="herosection">
+
+					<div id="carouselExampleControls" class="carousel slide"
+						data-ride="carousel">
+						<div class="carousel-inner">
+
+
+							<div class="carousel-item">
+								<div class="explain">
+									<h6></h6>
+									<h4>Antiques</h4>
+								</div>
+								<img class="d-block w-100" src="./images/antiquebanner.jpeg"
+									alt="Third slide">
+							</div>
+							<div class="carousel-item phonebanner">
+								<div class="livenow">
+									<h4>
+										<a href="#liveauction"><button>Auction is Live
+												Now</button></a>
+									</h4>
+								</div>
+								<img class="d-block w-100" src="./images/phonebanner.jpeg"
+									alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="./images/carbanner1.jpg"
+									alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="./images/banner4.jpg"
+									alt="Second slide">
+							</div>
+							<div class="carousel-item active">
+								<div class="explain">
+									<h6>CONTEMPORARY INDIAN ART</h6>
+									<h4>Beyond Bold</h4>
+								</div>
+								<!-- <center><h3 style="position:absolute; top:30px; color:white;margin:0 25%; text-shadow: 5px 5px 2px black;">You can save up to 89% with our offers!</h3></center> -->
+								<img class="d-block w-100" src="./images/banner8.jpg"
+									alt="First slide">
+							</div>
+
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls"
+							role="button" data-slide="prev"> <span
+							class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+							class="sr-only">Previous</span>
+						</a> <a class="carousel-control-next" href="#carouselExampleControls"
+							role="button" data-slide="next"> <span
+							class="carousel-control-next-icon" aria-hidden="true"></span> <span
+							class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- -----------------------------------shop by Category----------------- -->
+		<div class="category">
+			<h2>Shop by Category</h2>
+			<div class="category-images">
+
+				<figure>
+					<a href="cars.html"><img src="./images/cars.jpg"
+						alt="Not Found"></a>
+					<figcaption>Car</figcaption>
+				</figure>
+				<figure>
+					<a href="bikes.html"><img src="./images/bikes.jpg"
+						alt="Not Found"></a>
+					<figcaption>Bike</figcaption>
+				</figure>
+				<figure>
+					<a href="scooter.html"><img src="./images/scooters.jpg"
+						alt="Not Found"></a>
+					<figcaption>Scooter</figcaption>
+				</figure>
+				<figure>
+					<a href="electricvehicles.html"><img
+						src="./images/electric-cars.jpg" alt="Not Found"></a>
+					<figcaption>Electric Vehicles</figcaption>
+				</figure>
+				<figure>
+					<a href="cycles.html"><img src="./images/cycles.jpg"
+						alt="Not Found"></a>
+					<figcaption>Cycle</figcaption>
+				</figure>
+				<figure>
+					<a href="accessories.html"><img src="./images/phonlogo.jpeg"
+						alt="Not Found"></a>
+					<figcaption>Accessories</figcaption>
+				</figure>
+				<figure>
+					<a href="art.html"><img src="./images/arts.jpg" alt="Not Found"></a>
+					<figcaption>Paintings /Art</figcaption>
+				</figure>
+				<figure>
+					<a href="antiques.html"><img src="./images/antiqueslogo.jpg"
+						alt="Not Found"></a>
+					<figcaption>Antiques</figcaption>
+				</figure>
+
+
+			</div>
+		</div>
+		<!-- --------------------------------bid now------------------------------------------ -->
+		<div class="bidnow" id="bidnow">
+			<div class="outerdiv">
+			</div>
+			<div class="innerdiv">
+				<div class="closelogo" onclick="closebid()">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+				<br>
+				<h4>boAT Aavante Bar Rhythm Soundbar</h4>
+				<h5>M.R.P. ₹ 7999.0</h5>
+				<p>* Bidding Amount must be greater than the M.R.P.</p>
+				<input type="number" name="bidding"
+					placeholder="Enter The Bidding Amount" id="bidamount" required="required">
+				<button onclick="bidnow()">BID NOW</button>
+
+			</div>
+		</div>
+		<!-- --------------------------Live auctions---------------------------- -->
+		<div class="live-auction" id="liveauction">
+			<h2>Live Auctions</h2>
+			<div class="live-auction-boxes">
+				 <div class="live-auction-box">
+                    <div style="padding: 15px 5px; text-align: center;">M.R.P.<span>₹ 7999.0</span></div>
+                    <hr style="margin: 4px 8px;">
+                    <figure><img src="./images/a1.jpg" alt="">
+                        <figcaption>boAt Aavante Bar Rhythm Soundbar </figcaption>
+                    </figure>
+                    <hr>
+                    <h3 style="color: orange; padding:20px 5px; font-weight:500; font-size:15px">Auction ID.
+                        <span>BB12345</span>
+                    </h3>
+                    <div class="timer">
+
+                        <span
+                            class="price-left " style="float: left; font-size:18px"> ₹</span><span class="price-left " id="addamount" style="float: left; font-size:18px;">0.0</span>
+                        <!-- ₹ <p id="add"></p> -->
+                        <span class="time-right" id="timer" style="float: right; font-size: 20px;"></span>
+                    </div>
+                    <div class="addtocart" style="margin-top: 10px; ">
+                        
+                        <span style="float:right; margin-right:15px; "><button style=" color:white; border-radius: 5px;"
+                                id="bidNowBtn" onclick="openbid()">BID
+                                NOW</button></span><br><br>
+                    </div>
+                </div>
+
+
+				<div class="live-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 999.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/a2.jpg" alt="">
+						<figcaption>zart Resin Black Deer/Hiran Showpiece</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<span
+							class="price-left " style="float: left; font-size: 18px">
+							₹</span> <span class="price-left " id="addamount"
+							style="float: left; font-size: 18px;">0.0</span>
+							
+							<span class="time-right" id="timer1" style="float: right; font-size: 20px;"></span>
+					</div>
+					<div class="addtocart" style="margin-top: 10px;">
+													
+						<span
+							style="float: right; margin-right: 15px;"><button
+								style="color: white; border-radius: 5px;">BID NOW</button></span><br><br>
+					</div>
+				</div>
+
+
+
+				<div class="live-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 16,75,000.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/a3.jpg" alt="">
+						<figcaption>Mahindra Thar 4X4 2016</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<span class="price-left" style="float: left; font-size: 18px">₹
+							0.0</span> 
+							<span class="time-right" id="timer2" style="float: right; font-size: 20px;"></span>
+					</div>
+					<div class="addtocart" style="margin-top: 10px;">
+						
+							<span
+							style="float: right; margin-right: 15px;"><button
+								style="color: white; border-radius: 5px;">BID NOW</button></span><br><br>
+					</div>
+				</div>
+				<div class="live-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 9000.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/a5.webp" alt="">
+						<figcaption>Hercules Top Speed FX200 DX2 26T 2022</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<span class="price-left" style="float: left; font-size: 18px">₹
+							0.0</span> 
+							<span class="time-right" id="timer3" style="float: right; font-size: 20px;"></span>
+					</div>
+					<div class="addtocart" style="margin-top: 10px;">
+						 
+							<span
+							style="float: right; margin-right: 15px;"><button
+								style="color: white; border-radius: 5px;">BID NOW</button></span><br><br>
+					</div>
+				</div>
+
+
+				<div class="live-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 20,000.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/a4.jpg" alt="">
+						<figcaption>National Gallery London</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<span class="price-left" style="float: left; font-size: 18px">₹
+							0.0</span> 
+							<span class="time-right" id="timer4" style="float: right; font-size: 20px;"></span>					</div>
+					<div class="addtocart" style="margin-top: 10px;">
+						 
+							<span
+							style="float: right; margin-right: 15px;"><button
+								style="color: white; border-radius: 5px;">BID NOW</button></span><br><br>
+					</div>
+				</div>
+				<div class="live-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 50,000.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/a6.jpeg" alt="">
+						<figcaption>Science, Natural History and Curiosities</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<span class="price-left" style="float: left; font-size: 18px">₹
+							0.0</span> 
+							<span class="time-right" id="timer5" style="float: right; font-size: 20px;"></span>
+					</div>
+					<div class="addtocart" style="margin-top: 10px;">
+					
+							<span
+							style="float: right; margin-right: 15px;"><button
+								style="color: white; border-radius: 5px;">BID NOW</button></span><br><br>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- ----------------------------------Upcoming autions -->
+		<div class="upcoming-auction">
+			<h2>Upcoming Auctions</h2>
+			<div class="upcoming-auction-boxes">
+				<div class="upcoming-auction-box" style="height: 410px;">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 15,990.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/p3.jpg" alt="">
+						<figcaption>Hisense 32" Smart Android 11 LED TV 32A4G</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<p>Opens After 2 days</p>
+					</div>
+
+				</div>
+				<div class="upcoming-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 1,80,00.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/l1.jpg" alt="">
+						<figcaption>by F N Souza</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<p>Opens After 2 days</p>
+					</div>
+
+				</div>
+				<div class="upcoming-auction-box">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 50,000.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/l2.jpg" alt="" style="height: 240px;">
+						<figcaption>Statue</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<p>Opens After 2 days</p>
+					</div>
+
+				</div>
+				<div class="upcoming-auction-box" style="height: 350px;">
+					<div style="padding: 15px 5px; text-align: center;">
+						M.R.P.<span>₹ 0.0.0</span>
+					</div>
+					<hr style="margin: 4px 8px;">
+					<figure>
+						<img src="./images/l3.webp" alt="">
+						<figcaption>Tata Nexon EV XM 2022</figcaption>
+					</figure>
+					<hr>
+					<h3
+						style="color: orange; padding: 20px 5px; font-weight: 500; font-size: 15px">
+						Auction ID. <span>BB12345</span>
+					</h3>
+					<div class="timer">
+						<p>Opens After 2 days</p>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- -----------------------------contact form------------------ -->
+		<hr>
+		<div id="contactus"></div>
+		<center>
+			<h1>Contact Us</h1>
+		</center>
+
+		<div class="form1">
+
+			<form action="Contactdb" method="post">
+
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Your Name"
+						name="name" required="required">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Your Email"
+						name="email" required="required">
+				</div>
+				<div class="form-group">
+					<input type="number" class="form-control" placeholder="Mobile Number"
+						name="subject" required="required">
+				</div>
+				<div class="form-group">
+					<textarea id="" cols="30" rows="7" class="form-control"
+						placeholder="Message" name="message" required="required"></textarea>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message"
+						class="btn py-3 px-5 redbutton">
+				</div>
+			</form>
+		</div>
+		<!-- -------------------Footer------------------------------------ -->
+		<footer>
+			<div class="footer">
+				<div class="aboutus" id="aboutus">
+					<center>
+						<h3>About Us</h3>
+					</center>
+					<div class="about">
+						<p>Welcome to Auction Depot, one of the best Indian online
+							auction shopping venues on the Net! This web site is owned and
+							operated by Auction Depot Corporation, an Indian enterprise
+							founded by a group of seasoned investors; successful business
+							persons from All across of India.</p>
+						<p>Auctiondepot.com is india's first online TV Shop xyzz.in
+							You can buy branded LED , 3D TV, Smart TV at ever lowest prices
+							in india.</p>
+						<p>Auction Depot has introduced a completely new and funny way
+							of online shopping. Why spending a fortune for a brand new
+							product if you can get it with a huge discount? We give you the
+							chance to get the products you dream about at amazing prices!</p>
+						<p>Auctiondepot.com is a new exciting auction website where
+							you can win branded factory sealed new products at huge
+							discounts.</p>
+						<p>Auction Depot gives an opportunity to those people who
+							can't afford to purchase costly branded products, they can try
+							our risk free auctions to win their desired products like Cars,
+							Bikes, Smartphones, Laptop, Tablets, branded watches , Paintings
+							& Antiques Piece and many more.</p>
+						<p>We will do our very best to provide you with great
+							merchandise at the best possible price. We think you will find
+							that mixing online auction competition into the "joy of shopping"
+							makes it all even more fun at bidderboy.</p>
+					</div>
+					<div class="terms-condition">
+						<p>Trems & Conditions | Legal Terms of use | FAQs | Contact Us</p>
+						<p class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+								fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+									d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+									d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+						</p>
+						<hr>
+						<p ><h5 style="font-family:cursive;">MADE BY RAJESH KUMAR with 🖤</h5>
+						</p>
+					</div>
+					
+
+
+				</div>
+			</div>
+
+		</footer>
+		<!-- ---------------------Footer end------------------------------ -->
+		<!--Scripts  start-->
+
+		<script src="script.js"></script>
+		<script type="text/javascript" src=""></script>
+		<script src="https://kit.fontawesome.com/ce4327b835.js"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+		<!-- scripts end -->
+</body>
+</html>

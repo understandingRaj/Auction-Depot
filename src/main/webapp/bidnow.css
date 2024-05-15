@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+/* -------------------------bid now--------------------- */
+
+.outerdiv{
+    width: 100%;
+    height: 260vh;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    margin-top: 9em;
+    
+}
+
+.innerdiv{
+    padding: 10px;
+    height: auto;
+    width: 35em;
+    background-color: white;
+    top: 80em;
+    left:20em;
+    position: absolute;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid gold;
+}
+
+.bidnow h4,h5{
+    padding: 5px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bidnow h4{
+    color: red;
+}
+.bidnow p{
+    padding:2px 15px;
+    color: red;
+}
+.bidnow{
+    display: none;
+}
+.closelogo{
+    float: right;
+    padding: 5px 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.bidnow input{
+    width: 20em;
+    margin: 1em 1em;
+    height: 3em;
+    padding: 5px;
+    border-radius: 10px;
+}
+.bidnow button{
+    padding: 8px ;
+    border-radius: 10px;
+    font-weight: 800;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+.bidnow button:hover{
+    color: red;
+    background-color: white;
+}
+ 

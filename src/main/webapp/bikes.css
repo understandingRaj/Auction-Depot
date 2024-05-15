@@ -1,0 +1,26 @@
+.carbox{
+    height: 410px;
+}
+
+/* -------------------media query------------- */
+
+@media screen and (max-width:854px) {
+    .carbox {
+        width: 200px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:671px) {
+   .carbox {
+        width: 170px;
+        height: 290px;
+    }
+}
+@media screen and (max-width:403px) {
+    .carbox {
+        width: 100%;
+        height: auto;
+        /* margin: 10px 10%; */
+    }
+}
