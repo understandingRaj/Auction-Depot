@@ -18,6 +18,16 @@ Html ,CSS ,Javascript ,BootStrap ,JQuery
 
 Java ,JSP ,JDBC ,Servlets(Apache Tomacat 10.1) ,MySQL
 
+# USER INTERFACE
+
+**SignUp Page**
+
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/355769ac-767d-489e-9c46-2bf425007d82)
+
+**Login Page**
+![image](https://github.com/understandingRaj/Auction-Depot/assets/146615871/2b84bbbf-a99c-40f1-ad17-22bf6b90bdfb)
+
+
 
 
 
